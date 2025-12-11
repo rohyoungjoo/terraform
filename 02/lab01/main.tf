@@ -20,7 +20,7 @@ provider "aws" {
 # VPC 생성 후 dns 호스트 이름 활성화
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc#enable_dns_hostnames-2
 resource "aws_vpc" "myVPC" {
-  cidr_block       = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16"
 
   # argument_reference 에서 dns_hostname 서치
   # (Optional) A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
